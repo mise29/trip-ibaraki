@@ -1,0 +1,672 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top_grid {
+    display: grid;
+    grid-template: 100vh / 0.5fr 1fr;
+    overflow-x: hidden;
+}
+
+/* .heading,
+.top_img {
+    border: 1px solid #000;
+} */
+
+.heading {
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.heading h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 3.8rem;
+    letter-spacing: 1.5px;
+}
+
+.heading ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.heading a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.top_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 0 60px;
+    border: 1px solid #000;
+}
+
+/* all charm area */
+
+.charm_item {
+    margin-top: 100px;
+}
+
+.title_food {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title img {
+    height: 8rem;
+}
+
+.title h2 {
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    font-size: 2.2rem;
+}
+
+.charm_grid {
+    display: grid;
+    grid-template: 380px 380px / 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+/* image */
+.food_item {
+    position: relative;
+    border: 1px solid;
+    border-radius: 0 60px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    background-position: center;
+}
+
+/* charm food area bg-image */
+.food01 {
+    background-image: url(../image/food/food01.jpg);
+}
+
+.food02 {
+    background-image: url(../image/food/food02.jpg);
+}
+
+.food03 {
+    background-image: url(../image/food/food03.jpg);
+}
+
+.food04 {
+    background-image: url(../image/food/food04.jpg);
+}
+
+.food05 {
+    background-image: url(../image/food/food05.jpg);
+}
+
+.food06 {
+    background-image: url(../image/food/food06.jpg);
+}
+
+/* title */
+.small_item {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    border: 1px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 20px 0 0;
+    background-color: #fff;
+}
+
+.small_item p {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+/* charm explanation */
+.detail {
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex p {
+    margin: 0;
+    padding-left: 6px;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+}
+
+/* see more button */
+.more_btn {
+    display: grid;
+    grid-template: 100px / 1fr;
+    padding: 0 40px;
+    margin-top: 40px;
+    margin-bottom: 8rem;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #212121;
+    background: #fff;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+button:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+/* spot area */
+.spot01 {
+    background-image: url(../image/trip/flowerGarden.jpg);
+}
+
+.spot02 {
+    background-image: url(../image/trip/sea.jpg);
+}
+
+.spot03 {
+    background-image: url(../image/trip/greatBuddha.jpg);
+}
+
+.spot04 {
+    background-image: url(../image/trip/autumn.jpg);
+}
+
+.spot05 {
+    background-image: url(../image/trip/waterfall.jpg);
+}
+
+.spot06 {
+    background-image: url(../image/trip/mountain.jpg);
+}
+
+/* souvenir area */
+.sou_small {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    border: 1px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 20px 0 0;
+    background-color: #fff;
+}
+
+.sou_small p {
+    text-align: center;
+    font-size: .8rem;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+.sou01 {
+    background-image: url(../image/souvenir/sou01.jpg);
+}
+
+.sou02 {
+    background-image: url(../image/souvenir/sou02.jpg);
+}
+
+.sou03 {
+    background-image: url(../image/souvenir/sou03.jpg);
+}
+
+.sou04 {
+    background-image: url(../image/souvenir/sou04.jpg);
+}
+
+.sou05 {
+    background-image: url(../image/souvenir/sou05.jpg);
+}
+
+.sou06 {
+    background-image: url(../image/souvenir/sou06.jpg);
+}
+
+.description {
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:1024px) {
+    .top_grid {
+        grid-template: 78vh / 0.5fr 1fr;
+    }
+
+    .heading,
+    .top_img {
+        /* border: 1px solid #000; */
+    }
+
+    .heading {
+        padding: 60px 20px;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .title img {
+        height: 6rem;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+        letter-spacing: 4.2px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .charm_grid {
+        grid-template: 320px 320px 320px / 1fr 1fr;
+    }
+
+    .title_food {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .top_grid {
+        grid-template: 66vh / 0.5fr 1fr;
+    }
+
+    .heading {
+        padding-top: 40px;
+    }
+
+    .heading h1 {
+        font-size: 2.6rem;
+    }
+
+    .heading a {
+        font-size: .8rem;
+    }
+
+    .title_food {
+        padding: 0 20px;
+    }
+
+    .title h2 {
+        font-size: 1.6rem;
+        letter-spacing: 2.8px;
+    }
+
+    .title img {
+        height: 4.4rem;
+    }
+
+    .more_btn {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .heading a {
+        font-size: .8rem;
+    }
+
+    .charm_grid {
+        padding: 0 20px;
+    }
+
+    .title h2 {
+        font-size: 1.4rem;
+    }
+
+    .title img {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .top_grid {
+        grid-template: 140px 1fr / 1fr;
+        padding: 0 20px;
+    }
+
+    .heading {
+        margin: auto;
+        padding: 0 20px 0 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .heading h1 {
+        font-size: 1.4rem;
+    }
+
+    .heading a {
+        font-size: 0.6rem;
+    }
+
+    .heading li {
+        line-height: 1.2;
+    }
+}
+
+.bigbox {
+    position: relative;
+    /* border: 1px solid #000; */
+}
+
+.food_item {
+    position: absolute;
+    height: 278px;
+    width: 100%;
+    top: 0;
+    border: 1px solid #000;
+    margin-top: 0;
+}
+
+.text_box {
+    position: absolute;
+    bottom: 0;
+}
+
+.text_box p {
+    margin: 0;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+}
+
+.area p {
+    padding-left: 6px;
+}
+
+.are_detail {
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: .88rem;
+}
+
+
+/* bigbox food_item area p + .are_detail responsive */
+@media screen and (min-width:861px) {
+    .food_item {
+        height: 258px;
+    }
+}
+
+@media screen and (max-width:861px) {
+    .food_item {
+        height: 220px;
+    }
+
+    .charm_grid {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:652px) {
+    .food_item {
+        height: 230px;
+    }
+
+    .are_detail {
+        font-size: .8rem;
+        letter-spacing: 2px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width:642px) {
+    .charm_grid {
+        gap: 20px;
+    }
+
+    .food_item {
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:622px) {
+    .food_item {
+        height: 216px;
+    }
+}
+
+@media screen and (max-width:494px) {
+    .food_item {
+        height: 212px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .food_item {
+        height: 278px;
+    }
+}
+
+#mobile_ver {
+    display: none;
+}
+
+/* mobile slider */
+
+@media screen and (max-width:474px) {
+
+    .charm_item,
+    .charm_grid {
+        display: none;
+    }
+
+    #mobile_ver {
+        display: block;
+        margin-top: 100px;
+    }
+
+    .mobile_title_food {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mobile_title img {
+        height: 4rem;
+    }
+
+    .mobile_title h2 {
+        font-weight: normal;
+        letter-spacing: 5px;
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .slider {
+        padding: 0 30px;
+        position: relative;
+        z-index: 1;
+        height: 50vh;
+        margin: 0 10px;
+    }
+
+    /*　背景画像設定　*/
+
+    .slider-item01 {
+        background: url(../image/food/food01.jpg);
+    }
+
+    .slider-item02 {
+        background: url(../image/food/food02.jpg);
+    }
+
+    .slider-item03 {
+        background: url(../image/food/food03.jpg);
+    }
+
+    .slider-item04 {
+        background: url(../image/food/food04.jpg);
+    }
+
+    .slider-item05 {
+        background: url(../image/food/food05.jpg);
+    }
+
+    .slider-item06 {
+        background: url(../image/food/food06.jpg);
+    }
+
+    .slider-spot01 {
+        background: url(../image/trip/flowerGarden.jpg);
+    }
+
+    .slider-spot02 {
+        background: url(../image/trip/sea.jpg);
+    }
+
+    .slider-spot03 {
+        background: url(../image/trip/greatBuddha.jpg);
+    }
+
+    .slider-spot04 {
+        background: url(../image/trip/autumn.jpg);
+    }
+
+    .slider-spot05 {
+        background: url(../image/trip/waterfall.jpg);
+    }
+
+    .slider-spot06 {
+        background: url(../image/trip/mountain.jpg);
+    }
+    .slider-sou01 {
+        background: url(../image/souvenir/sou01.jpg);
+    }
+
+    .slider-sou02 {
+        background: url(../image/souvenir/sou02.jpg);
+    }
+
+    .slider-sou03 {
+        background: url(../image/souvenir/sou03.jpg);
+    }
+
+    .slider-sou04 {
+        background: url(../image/souvenir/sou04.jpg);
+    }
+
+    .slider-sou05 {
+        background: url(../image/souvenir/sou05.jpg);
+    }
+
+    .slider-sou06 {
+        background: url(../image/souvenir/sou06.jpg);
+    }
+
+    .slider-item {
+        width: 100%;
+        /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+        height: 12rem;
+        /*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid #000;
+        border-radius: 20px;
+        margin: 10px;
+
+    }
+
+    /* arrow */
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        z-index: 3;
+        top: 42%;
+        cursor: pointer;
+        /*マウスカーソルを指マークに*/
+        outline: none;
+        /*クリックをしたら出てくる枠線を消す*/
+        border-top: 2px solid #000;
+        /*矢印の色*/
+        border-right: 2px solid #000;
+        /*矢印の色*/
+        height: 10px;
+        width: 10px;
+    }
+
+    .slick-prev {
+        /*戻る矢印の位置と形状*/
+        left: 2.5%;
+        transform: rotate(-135deg);
+    }
+
+    .slick-next {
+        /*次へ矢印の位置と形状*/
+        right: 2.5%;
+        transform: rotate(45deg);
+    }
+
+    .mobile_small_item {
+        position: absolute;
+        bottom: 0;
+        margin-top: 10px;
+        width: 140px;
+        border: 1px solid #000;
+        border-left: none;
+        border-radius: 0 20px 0 20px;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .mobile_small_item p {
+        text-align: center;
+        font-size: .8rem;
+        letter-spacing: 1.5px;
+        margin: 10px 0;
+    }
+
+    .mobile_more_btn {
+        display: grid;
+        grid-template: 40px / 1fr;
+        padding: 0 40px;
+        margin-bottom: 4rem;
+        margin-top: -1rem;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+.long_name {
+    width: 200px;
+}
+.long_name p {
+    font-size: .8rem;
+}
