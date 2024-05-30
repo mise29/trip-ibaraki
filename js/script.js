@@ -12,3 +12,12 @@ $('.slider').slick({
     pauseOnFocus: false,//フォーカスで一時停止を無効
     pauseOnHover: false,//マウスホバーで一時停止を無効
 });
+
+$(window).scroll(function() {
+    var fixedMenu = $('#fixedMenu');
+    if ($(this).scrollTop() > 400) {
+        fixedMenu.css('display', 'block');
+    } else {
+        fixedMenu.css('display', 'none');
+    }
+});
